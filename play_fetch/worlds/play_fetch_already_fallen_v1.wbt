@@ -1,0 +1,23 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.08352539896170388 0.9673114582244309 0.23944112118851532 2.4651759733544027
+  position 5.496848269367324 4.618746528705281 -5.632522190071347
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+OilBarrel {
+  translation 1.65454 1.01 -0.76431
+  height 1
+  radius 0.03
+  physics Physics {
+    mass 0.5
+  }
+}

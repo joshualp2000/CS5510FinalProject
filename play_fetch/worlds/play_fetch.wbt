@@ -1,0 +1,29 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.6931032800836722 0.6931032800836722 0.1980295085953349 0.75
+  position 6.720252990983395 8.053611896176054 11.705446957947325
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+TiagoTitanium {
+  translation 0 0.075 7.34642e-08
+  controller "go_fetch"
+  lidarSlot [
+    HokuyoUrg04lxug01 {
+      translation 0 0 -0.08
+    }
+  ]
+}
+OilBarrel {
+  translation 1.80352 1.01 -0.223801
+  height 2
+  radius 0.03
+}

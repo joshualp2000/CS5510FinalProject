@@ -1,0 +1,59 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.08352539896170388 0.9673114582244309 0.23944112118851532 2.4651759733544027
+  position 5.496848269367324 4.618746528705281 -5.632522190071347
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+TiagoTitanium {
+  translation 0.0017296005320384146 0.08830524020770267 0.003193127339349293
+  rotation -0.9999203617394394 0.008994204111094832 -0.00885293574340438 1.538739844324618
+  controller "go_fetch"
+  lidarSlot [
+    HokuyoUrg04lxug01 {
+      translation 0 0 -0.08
+    }
+  ]
+}
+Solid {
+  translation 2.31506 0.52 0.223555
+  children [
+    DEF G1 Group {
+      children [
+        Transform {
+          translation 0 -0.5 0
+          children [
+            Shape {
+              appearance DEF A PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.01
+                radius 0.25
+              }
+            }
+          ]
+        }
+        Shape {
+          appearance USE A
+          geometry Cylinder {
+            height 1
+            radius 0.03
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject USE G1
+  physics Physics {
+    density -1
+    mass 1
+  }
+}

@@ -24,7 +24,7 @@ TiagoTitanium {
   ]
 }
 Solid {
-  translation 2.31506 0.52 0.223555
+  translation 2.28313 0.52 -0.558577
   children [
     DEF G1 Group {
       children [

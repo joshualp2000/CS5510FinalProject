@@ -148,7 +148,7 @@ while robot.step(timestep) != -1:
             # wheelL.setPosition(1)
             wheelR.setVelocity(0)
             wheelL.setVelocity(2)
-        elif sIndex < 326:
+        elif sIndex < 331:
             print("Left", end=" -> ")
 
             # wheelR.setPosition(1)
